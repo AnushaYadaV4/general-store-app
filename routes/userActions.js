@@ -6,6 +6,8 @@ const router = express.Router();
 
 router.post('/addStoreItems', userActionsController.postAddStoreItems);
 router.get('/getStoreItems',userActionsController.getStoreItems);
-//router.delete('/deleteUser/:id',userFormController.deleteUser);
+router.delete('/deleteUser/:id',userActionsController.deleteUser);
+router.post('/editStoreItems/:id',userActionsController.postEditStoreItems);
+router.post('/decreasing-quantity/:id',userActionsController.postUpdateStoreQuantity);
 
 module.exports = router;
