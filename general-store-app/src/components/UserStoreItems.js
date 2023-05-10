@@ -7,7 +7,7 @@ const UserStoreItems = (prop) => {
     console.log("ITEMS", prop.items);
     return (
 
-        <Card className="expense-item">
+        <div className='expense-item'>
 
             <span>
                 <h2>Item name:</h2>
@@ -35,18 +35,18 @@ const UserStoreItems = (prop) => {
             </span>
 
 
-            <button onClick={() => { prop.buyOneButtonClicked(prop.items) }}>Buy one</button>
-            <button onClick={() => { prop.buyTwoButtonClicked(prop.items) }}>Buy Two</button>
+            <button className='button' onClick={() => { prop.buyOneButtonClicked(prop.items) }}>Buy one</button>
+            <button className='button' onClick={() => { prop.buyTwoButtonClicked(prop.items) }}>Buy Two</button>
 
-            <button onClick={() => { prop.buyThreeButtonClicked(prop.items) }}>Buy Three</button>
-
-
+            <button className='button' onClick={() => { prop.buyThreeButtonClicked(prop.items) }}>Buy Three</button>
 
 
 
-            <button onClick={() => { prop.deleteButtonClicked(prop.items.id) }}>Delete</button>
-            <button onClick={() => prop.editButtonClicked(prop.items)}>Edit</button>
-        </Card>
+
+
+            <button className='button button-delete-color' onClick={() => { prop.deleteButtonClicked(prop.items.id) }}>Delete</button>
+            <button className='button button-edit-color' onClick={() => prop.editButtonClicked(prop.items)}>Edit</button>
+        </div>
 
 
 

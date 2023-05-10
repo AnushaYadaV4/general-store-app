@@ -1,12 +1,15 @@
 .expense-item {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
     padding: 0.5rem;
     margin: 1rem 0;
-    border-radius: 12px;
-    background-color: #4b4b4b;
+    border-radius: 30px;
+    background-color: #8f8f8f;
+    min-height: 0vh;
+    max-width: 90vw;
+    
   }
   
   .expense-item__description {
@@ -36,10 +39,36 @@
     padding: 0.5rem;
     border-radius: 12px;
   }
+
+  .button {
+    font-family: "Open Sans";
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 28px;
+    margin: 10px;
+    background-color: #ffdda9;
+    color:black;
+    border: 0px;
+    font-weight: bold;
+  }
+  .button-edit-color{
+    background-color: green;
+    color: white;
+  }
+
+  .button-delete-color{
+    background-color: rgb(128, 0, 0);
+    color: white;
+  }
+  
+  
+  
   
   @media (min-width: 580px) {
     .expense-item__description {
-      flex-direction: row;
+      flex-direction: column;
       align-items: center;
       justify-content: flex-start;
       flex: 1;

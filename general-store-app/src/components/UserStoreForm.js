@@ -5,6 +5,7 @@ import axios from 'axios';
 import UserStoreItems from './UserStoreItems';
 import { generalStoreAction } from '../store/generalStore-reducer';
 import { useDispatch, useSelector } from 'react-redux';
+import "./Card.css";
 
 const UserStoreForm = () => {
   const [storeItems, setStoreItems] = useState([]);
@@ -160,7 +161,7 @@ const UserStoreForm = () => {
 
   return (
     <Fragment>
-      <div>
+      <div className='bg-container'>
         <form>
           <h1>General Store Form</h1>
           <label htmlFor="name">Item Name</label>
@@ -181,7 +182,7 @@ const UserStoreForm = () => {
 
       </div>
 
-      <section>
+      <section className='bg-container'>
         <h1>Your Store Items</h1>
         {storeItems.length > 0 && storeItems.map((obj) => {
           return (<UserStoreItems
