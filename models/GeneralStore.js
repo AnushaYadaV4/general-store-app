@@ -11,15 +11,15 @@ const GeneralStore = sequelize.define('generalstore',
     itemName: Sequelize.STRING,
     description: {
       type: Sequelize.STRING,
-      unique: true,
+      unique: false,
     },
     price: {
       type: Sequelize.STRING,
-      unique: true,
+      unique: false,
     },
     quantity:{
         type: Sequelize.INTEGER,
-        unique: true,
+        unique: false,
 
     }
   });
